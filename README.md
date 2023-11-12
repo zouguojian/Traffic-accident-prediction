@@ -8,6 +8,6 @@ If not, there are some problems will appear in the running stage.
 ---
 
 #### NOTICE   
---->>>>>>> M2STN is prepared to summit to journal of IEEE Transactions on Intelligent Transportation Systems TITS.   
+--->>>>>>> M2STN is prepared to submit to the Journal of IEEE Transactions on Intelligent Transportation Systems TITS.     
 
 Above codes have been uploaded in the Git-Hub page [[codes link]](https://github.com/zouguojian/Traffic-accident-risk).  

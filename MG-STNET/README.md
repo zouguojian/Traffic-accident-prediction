@@ -1,27 +1,27 @@
 # Traffic- accident-risk-estimation
 
-# M2STN
-IEEE T-ITS 2023. M2STN: A Multi-Modal Spatio-Temporal Network for Traffic Accident Risk Forecasting  
+# MG-STNET
+Transportation Research Part C: Emerging Technologies 2023. MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
 
 # Usage
 
 train model on NYC:
 ```
-python train.py --config config/nyc/GSNet_NYC_Config.json --gpus 0
+python train.py --config config/nyc/NYC_Config.json --gpus 0
 ```
 test model on NYC
 ```
- python train.py --config config/nyc/GSNet_NYC_Config.json --gpus 0 --test
+ python train.py --config config/nyc/NYC_Config.json --gpus 0 --test
 ```
 
 train model on Chicago:
 ```
-python train.py --config config/chicago/GSNet_Chicago_Config.json --gpus 0
+python train.py --config config/chicago/Chicago_Config.json --gpus 0
 ```
 
 test model on Chicago:
 ```
-python train.py --config config/chicago/GSNet_Chicago_Config.json --gpus 0 --test
+python train.py --config config/chicago/Chicago_Config.json --gpus 0 --test
 ```
 
 # Configuration

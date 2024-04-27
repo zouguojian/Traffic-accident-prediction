@@ -22,7 +22,7 @@ rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
 
 from lib.dataloader import normal_and_generate_dataset_time, get_mask, get_adjacent, get_grid_node_map_maxtrix
-from model.M2STN import M2STN
+from model.MGSTNET import MGSTNET
 from lib.utils import mask_loss, compute_loss, predict_and_evaluate
 
 parser = argparse.ArgumentParser()
@@ -249,7 +249,7 @@ def main(config):
     if args.aptonly:
         road_supports, risk_supports, poi_supports = None, None, None
 
-    M2STN_Model = M2STN(train_data_shape[2], seq_len, pre_len,
+    MGSTNET_Model = MGSTNET(train_data_shape[2], seq_len, pre_len,
                         gru_hidden_size, time_shape[2], graph_feature_shape[2],
                         nums_of_filter, north_south_map, west_east_map,
                         support_lists=[road_supports, risk_supports, poi_supports],
@@ -258,19 +258,19 @@ def main(config):
     # multi gpu
     if torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!", flush=True)
-        GSNet_Model = nn.DataParallel(M2STN_Model)
-    M2STN_Model.to(device)
-    print(M2STN_Model)
+        GSNet_Model = nn.DataParallel(MGSTNET_Model)
+    MGSTNET_Model.to(device)
+    print(MGSTNET_Model)
 
     num_of_parameters = 0
-    for name, parameters in M2STN_Model.named_parameters():
+    for name, parameters in MGSTNET_Model.named_parameters():
         num_of_parameters += np.prod(parameters.shape)
     print("Number of Parameters: {}".format(num_of_parameters), flush=True)
 
-    trainer = optim.Adam(M2STN_Model.parameters(), lr=learning_rate)
+    trainer = optim.Adam(MGSTNET_Model.parameters(), lr=learning_rate)
 
     if not args.test:  # training
-        train(M2STN_Model,
+        train(MGSTNET_Model,
               training_epoch,
               train_loader,
               val_loader,

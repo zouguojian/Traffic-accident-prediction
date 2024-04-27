@@ -303,7 +303,7 @@ class STSemModule(nn.Module):
         return graph_output
 
 
-class M2STN(nn.Module):
+class MGSTNET(nn.Module):
     def __init__(self, grid_in_channel, seq_len, pre_len,
                  emb_size, num_of_target_time_feature,
                  num_of_graph_feature, nums_of_graph_filters,
@@ -322,7 +322,7 @@ class M2STN(nn.Module):
             north_south_map {int} -- the weight of grid data
             west_east_map {int} -- the height of grid data
         """
-        super(M2STN, self).__init__()
+        super(MGSTNET, self).__init__()
         self.emb_size = emb_size
         self.north_south_map = north_south_map
         self.west_east_map = west_east_map

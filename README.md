@@ -8,7 +8,6 @@ If not, there are some problems will appear in the running stage.
 ---
 
 #### NOTICE   
---->>>>>>> The short length of MG-STNET is submitted to the Conference in Emerging Technologies in Transportation Systems (TRC-30)  
 --->>>>>>> The full length of MG-STNET is submitted to the Journal of Transportation Research Part C: Emerging Technologies.     
 
 Above codes have been uploaded to the Git-Hub page [[codes link]](https://github.com/zouguojian/Traffic-accident-prediction/tree/main/MG-STNET).  

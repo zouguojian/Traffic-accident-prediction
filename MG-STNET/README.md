@@ -33,7 +33,6 @@ The configuration file config.json contains three parts: Data, Training and Pred
 
 If you find this repository useful in your research, please cite the following paper:
 ```
-
 @article{zou2024mt,
   title={MT-STNet: A Novel Multi-Task Spatiotemporal Network for Highway Traffic Flow Prediction},
   author={Zou, Guojian and Lai, Ziliang and Wang, Ting and Liu, Zongshi and Li, Ye},

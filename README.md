@@ -8,6 +8,6 @@ If not, there are some problems will appear in the running stage.
 ---
 
 #### NOTICE   
---->>>>>>> The full length of MG-STNET is submitted to the Journal of Analytic Methods in Accident Research.     
+--->>>>>>> The full length of MG-STNET is submitted to the Journal of Accident Analysis & Prevention.     
 
 Above codes have been uploaded to the Git-Hub page [[codes link]](https://github.com/zouguojian/Traffic-accident-prediction/tree/main/MG-STNET).  

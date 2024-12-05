@@ -1,7 +1,7 @@
 # Traffic- accident-risk-estimation
 
 # MG-STNET
-Transportation Research Part C: Emerging Technologies 2023. MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
+MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
 
 # Usage
 

@@ -24,6 +24,36 @@ test model on Chicago:
 python train.py --config config/chicago/Chicago_Config.json --gpus 0 --test
 ```
 
+# Traffic Accident Risk Prediction Model Evaluation
+
+## Evaluation Metrics
+
+Six metrics are utilized to evaluate the traffic accident risk prediction model's performance. 
+
+### Regression Task Metric
+**Root Mean Square Error (RMSE)**  
+For the regression-based evaluation of predicted accident risks:  
+$$
+\mathrm{RMSE}=\sqrt{\frac{1}{D} \sum_{i=1}^{D}\left(Y_i-\hat{Y}_i\right)^2}
+$$  
+*A lower RMSE indicates more accurate predictions in high-risk regions.*
+
+### Classification Task Metrics
+When treating risk prediction as a classification problem:
+
+1. ​**Recall**  
+   Measures coverage of actual high-risk areas:  
+   $$
+   \text{Recall}=\frac{1}{D} \sum_{i=1}^{D} \frac{S_i \cap R_i}{|R_i|}
+   $$  
+
+2. ​**Mean Average Precision (MAP)**  
+   Evaluzes ranking accuracy of predicted risks:  
+   $$
+   \mathrm{MAP}=\frac{1}{D} \sum_{i=1}^{D} \frac{\sum_{j=1}^{|R_i|} \text{pre}(j) \times \text{rel}(j)}{|R_i|}
+   $$  
+   *Higher Recall and MAP scores indicate better performance in identifying high-risk zones.*
+
 # Configuration
 
 The configuration file config.json contains three parts: Data, Training and Predict:

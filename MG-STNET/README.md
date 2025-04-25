@@ -41,15 +41,11 @@ When treating risk prediction as a classification problem:
 
 1. ​**Recall**  
    Measures coverage of actual high-risk areas:  
-   $$
-   \text{Recall}=\frac{1}{D} \sum_{i=1}^{D} \frac{S_i \cap R_i}{|R_i|}
-   $$  
+   $\text{Recall}=\frac{1}{D} \sum_{i=1}^{D} \frac{S_i \cap R_i}{|R_i|}$  
 
 2. ​**Mean Average Precision (MAP)**  
    Evaluzes ranking accuracy of predicted risks:  
-   $$
-   \mathrm{MAP}=\frac{1}{D} \sum_{i=1}^{D} \frac{\sum_{j=1}^{|R_i|} \text{pre}(j) \times \text{rel}(j)}{|R_i|}
-   $$  
+   $\mathrm{MAP}=\frac{1}{D} \sum_{i=1}^{D} \frac{\sum_{j=1}^{|R_i|} \text{pre}(j) \times \text{rel}(j)}{|R_i|}$  
    *Higher Recall and MAP scores indicate better performance in identifying high-risk zones.*
 
 # Configuration

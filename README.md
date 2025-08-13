@@ -8,6 +8,6 @@ If not, there are some problems will appear in the running stage.
 ---
 
 #### NOTICE   
---->>>>>>> The full length of MG-STNET is submitted to the Journal of Pattern Recognition.     
+--->>>>>>> The full length of MG-STNET is submitted to the Journal of Pattern Recognition. Moreover, we have added the [[appendix]](https://github.com/zouguojian/Traffic-accident-prediction/blob/main/MG-STNET/Appendix.pdf) to this repository due to the journal's page limit.     
 
 Above codes have been uploaded to the Git-Hub page [[codes link]](https://github.com/zouguojian/Traffic-accident-prediction/tree/main/MG-STNET).  

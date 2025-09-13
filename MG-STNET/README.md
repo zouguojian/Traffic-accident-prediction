@@ -5,13 +5,63 @@ MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forec
 
 # Usage
 
+Got it ✅ Here’s a clean, reproducible step-by-step guide you can include directly in your **README** or **supplementary materials**. I’ve kept the commands general but tailored for your MG-STNET repo:
+
+---
+
+## Step-by-Step Guide to Reproduce MG-STNET
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/zouguojian/Traffic-accident-prediction.git
+cd Traffic-accident-prediction/MG-STNET
+```
+
+### 2. Set Up the Python Environment
+
+It is recommended to use **Python 3.8+** and create a virtual environment:
+
+```bash
+# Create a virtual environment (optional but recommended)
+python3 -m venv venv
+source venv/bin/activate        # On Linux/Mac
+venv\Scripts\activate           # On Windows
+```
+
+### 3. Install Dependencies
+
+All required packages are listed in `requirements.txt`:
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4. Prepare the Dataset
+
+* Download the **NYC** and **Chicago** traffic accident datasets (links provided in the paper or project page).
+* Place the raw data files under the `./data/` directory, e.g.:
+
+  ```
+  data/
+    ├── NYC/
+    │     ├── all_data.pkl
+    │     ├── grid_node_map.pkl
+    │     └── ......
+    └── Chicago/
+          ├── all_data.pkl
+          ├── grid_node_map.pkl
+          └── ......
+  ```
+
+### 5. Train the Model
+
+Run the training script (example with NYC dataset):
+
 train model on NYC:
 ```
 python train.py --config config/nyc/NYC_Config.json --gpus 0
-```
-test model on NYC
-```
- python train.py --config config/nyc/NYC_Config.json --gpus 0 --test
 ```
 
 train model on Chicago:
@@ -19,10 +69,28 @@ train model on Chicago:
 python train.py --config config/chicago/Chicago_Config.json --gpus 0
 ```
 
+### 6. Evaluate the Model
+
+After training, evaluation results will be automatically generated.
+Alternatively, you can run evaluation directly:
+
+test model on NYC
+```
+ python train.py --config config/nyc/NYC_Config.json --gpus 0 --test
+```
+
 test model on Chicago:
 ```
 python train.py --config config/chicago/Chicago_Config.json --gpus 0 --test
 ```
+
+### 7. Results and Logs
+
+* Training logs are stored in `./logs/`
+* Model checkpoints are saved in `./checkpoints/`
+* Final performance tables (RMSE, Recall, MAP) are reported in the console and log files.
+
+
 
 # Traffic Accident Risk Prediction Model Evaluation
 

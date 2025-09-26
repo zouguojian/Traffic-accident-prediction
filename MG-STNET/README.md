@@ -54,6 +54,8 @@ pip install -r requirements.txt
           ├── grid_node_map.pkl
           └── ......
   ```
+  * Dataset split process: The dataset was divided into training, validation, and test sets in chronological order to preserve temporal causality, consistent with all baseline models. Within the training process, the training set was randomly shuffled at each epoch. We did not use random resampling splits, as these would break temporal ordering and cause information leakage.
+
 
 ### 5. Train the Model
 

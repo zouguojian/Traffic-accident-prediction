@@ -1,0 +1,76 @@
+{
+    "patience": 10,
+    "delta": 1e-5,
+    "seed": 12418,
+    "data_type": "nyc",
+
+    "bfc_20_10_filename": "data/nyc/bfc_20_10.pkl",
+
+    "all_data_filename_1": "data/nyc/all_data_20_20.pkl",
+    "mask_filename_1": "data/nyc/risk_mask_20_20.pkl",
+    "road_adj_filename_1": "data/nyc/road_adj_20_20.pkl",
+    "risk_adj_filename_1": "data/nyc/risk_adj_20_20.pkl",
+    "poi_adj_filename_1": "data/nyc/poi_adj_20_20.pkl",
+    "sum_adj_filename_1": "data/nyc/sum_adj_20_20.pkl",
+    "grid_node_filename_1": "data/nyc/grid_node_map_20_20.pkl",
+    "west_east_map_1": 20,
+    "north_south_map_1": 20,
+
+    "trans20_10_filename": "data/nyc/trans_20_10.pkl",
+
+    "all_data_filename_2": "data/nyc/all_data_10_10.pkl",
+    "mask_filename_2": "data/nyc/risk_mask_10_10.pkl",
+    "road_adj_filename_2": "data/nyc/road_adj_10_10.pkl",
+    "risk_adj_filename_2": "data/nyc/risk_adj_10_10.pkl",
+    "poi_adj_filename_2": "data/nyc/poi_adj_10_10.pkl",
+    "sum_adj_filename_2": "data/nyc/sum_adj_10_10.pkl",
+    "grid_node_filename_2": "data/nyc/grid_node_map_10_10.pkl",
+    "west_east_map_2": 10,
+    "north_south_map_2": 10,
+
+    "trans10_5_filename": "data/nyc/trans_10_5.pkl",
+
+    "all_data_filename_3": "data/nyc/all_data_5_5.pkl",
+    "mask_filename_3": "data/nyc/risk_mask_5_5.pkl",
+    "road_adj_filename_3": "data/nyc/road_adj_5_5.pkl",
+    "risk_adj_filename_3": "data/nyc/risk_adj_5_5.pkl",
+    "poi_adj_filename_3": "data/nyc/poi_adj_5_5.pkl",
+    "sum_adj_filename_3": "data/nyc/sum_adj_5_5.pkl",
+    "grid_node_filename_3": "data/nyc/grid_node_map_5_5.pkl",
+    "west_east_map_3": 5,
+    "north_south_map_3": 5,
+
+    "trans5_2_filename": "data/nyc/trans_5_2.pkl",
+
+    "all_data_filename_4": "data/nyc/all_data_2_2.pkl",
+    "mask_filename_4": "data/nyc/risk_mask_2_2.pkl",
+    "road_adj_filename_4": "data/nyc/road_adj_2_2.pkl",
+    "risk_adj_filename_4": "data/nyc/risk_adj_2_2.pkl",
+    "poi_adj_filename_4": "data/nyc/poi_adj_2_2.pkl",
+    "sum_adj_filename_4": "data/nyc/sum_adj_2_2.pkl",
+    "grid_node_filename_4": "data/nyc/grid_node_map_2_2.pkl",
+    "west_east_map_4": 2,
+    "north_south_map_4": 2,
+
+    "remote_sensing_image_path": "data/nyc_remote_sensing_256",
+
+    "recent_prior": 3,
+    "week_prior": 4,
+    "one_day_period": 24,
+    "days_of_week": 7,
+    "pre_len": 1,
+
+    "train_rate": 0.6,
+    "valid_rate": 0.2,
+    "training_epoch": 1000,
+    "optimizer": "adam",
+
+    "batch_size": 32,
+    "learning_rate": 1e-4,
+    "num_of_transformer_layers": 2,
+    "transformer_hidden_size": 64,
+    "gcn_num_filter": 64,
+    "num_of_heads": 2,
+    "augment_channel": 8
+
+}

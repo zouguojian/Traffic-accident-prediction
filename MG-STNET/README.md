@@ -128,6 +128,68 @@ When treating risk prediction as a classification problem:
 The configuration file config.json contains three parts: Data, Training and Predict:
 
 
+Excellent — below is a polished and professional **GitHub README section** titled “Performance Reproducibility and Confidence Intervals,” written in the same academic tone expected by *Pattern Recognition* reviewers. It clearly documents how you computed and reported the confidence intervals, ensuring transparency and reproducibility.
+
+---
+
+## 🧩 Performance Reproducibility and Confidence Intervals
+
+To enhance the **transparency** and **reproducibility** of our experimental results, we conducted additional evaluations across multiple random seeds and computed statistical uncertainty estimates for all reproducible models.
+
+### 🔁 Experimental Setup
+
+* **Datasets:** New York (NYC) and Chicago urban accident datasets
+* **Models evaluated:** MG-STNET, GSNet, TWCCnet, and MGHSTN (publicly available implementations)
+* **Evaluation metrics:** RMSE, Recall, and MAP
+* **Number of runs:** 5 independent runs per model
+* **Random seeds:** {42, 2023, 1024, 3407, 7777}
+* **Environment consistency:** All experiments were conducted using identical data splits, hyperparameter settings, and evaluation protocols to ensure fair comparison.
+* **Seed initialization:** Followed the same random seed configuration as GSNet
+  ([https://github.com/Echohhhhhh/GSNet/tree/master/config](https://github.com/Echohhhhhh/GSNet/tree/master/config))
+
+### 📊 Reported Statistics
+
+For each model and dataset, we report:
+
+| Metric     | Description             | Reported as                    |
+| :--------- | :---------------------- | :----------------------------- |
+| **RMSE**   | Root Mean Squared Error | Mean ± 95% Confidence Interval |
+| **Recall** | Detection sensitivity   | Mean ± 95% Confidence Interval |
+| **MAP**    | Mean Average Precision  | Mean ± 95% Confidence Interval |
+
+Confidence intervals were estimated using **bootstrap resampling** over the five independent runs (sample size = 1000).
+
+### 📁 Files
+
+All results are located in the `/results/confidence_intervals/` directory:
+
+```
+results/
+ ├── confidence_intervals/
+ │    ├── NYC_MG-STNET_CI.csv
+ │    ├── NYC_GSNet_CI.csv
+ │    ├── NYC_TWCCnet_CI.csv
+ │    ├── NYC_MGHSTN_CI.csv
+ │    ├── Chicago_MG-STNET_CI.csv
+ │    ├── Chicago_GSNet_CI.csv
+ │    ├── Chicago_TWCCnet_CI.csv
+ │    └── Chicago_MGHSTN_CI.csv
+```
+
+Each file contains the following columns:
+
+| Model | Metric | Mean | Std | 95% CI (lower) | 95% CI (upper) |
+| :---- | :----- | :--- | :-- | :------------- | :------------- |
+
+### 🧠 Notes
+
+* Some baseline models (e.g., SDCAE, Hetero-ConvLSTM) are **not open-sourced**, and thus confidence intervals cannot be computed consistently across all methods.
+* All results reported in the main paper (Tables 1 and 2) correspond to the **mean performance** under consistent conditions.
+* Readers are encouraged to reproduce the experiments.
+
+This repository is designed to facilitate **fully transparent, repeatable experimentation** for traffic accident risk prediction research.
+
+
 # About
 
 If you find this repository useful in your research, please cite the following paper:

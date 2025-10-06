@@ -1,4 +1,4 @@
-# Traffic- accident-risk-estimation
+<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/844d543b-a522-4b03-b6b4-acbe6edd1f54" /># Traffic- accident-risk-estimation
 
 # MG-STNET
 MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
@@ -131,7 +131,7 @@ To enhance the **transparency** and **reproducibility** of our experimental resu
 ### 🔁 Experimental Setup
 
 * **Datasets:** New York (NYC) and Chicago urban accident datasets
-* **Models evaluated:** MG-STNET, GSNet, TWCCnet, and MGHSTN (publicly available implementations)
+* **Models evaluated:** MG-STNET, GSNet, C-ViT, TWCCnet, and MGHSTN (publicly available implementations)
 * **Evaluation metrics:** RMSE, Recall, and MAP
 * **Number of runs:** 5 independent runs per model
 * **Random seeds:** {100, 500, 1000, 1500, 2019}
@@ -157,13 +157,13 @@ All results are located in the [`CIs`](https://github.com/zouguojian/Traffic-acc
 
 Each file contains the following columns:
 
-| Model | Metric | Mean | Std | 95% CI (lower) | 95% CI (upper) |
+| Dataset | Model | Seed | RMSE | Recall | MAP |
 | :---- | :----- | :--- | :-- | :------------- | :------------- |
 
 ### 🧠 Notes
 
 * Some baseline models (e.g., SDCAE, Hetero-ConvLSTM) are **not open-sourced**, and thus confidence intervals cannot be computed consistently across all methods.
-* All results reported in the main paper (Tables 1 and 2) correspond to the **mean performance** under consistent conditions.
+* All results reported in the main paper (Tables R1 and R2) correspond to the **mean performance** under consistent conditions.
 * Readers are encouraged to reproduce the experiments.
 
 This repository is designed to facilitate **fully transparent, repeatable experimentation** for traffic accident risk prediction research.

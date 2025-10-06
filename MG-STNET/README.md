@@ -123,14 +123,6 @@ When treating risk prediction as a classification problem:
    
    *Higher Recall and MAP scores indicate better performance in identifying high-risk zones.*
 
-# Configuration
-
-The configuration file config.json contains three parts: Data, Training and Predict:
-
-
-Excellent — below is a polished and professional **GitHub README section** titled “Performance Reproducibility and Confidence Intervals,” written in the same academic tone expected by *Pattern Recognition* reviewers. It clearly documents how you computed and reported the confidence intervals, ensuring transparency and reproducibility.
-
----
 
 ## 🧩 Performance Reproducibility and Confidence Intervals
 
@@ -142,7 +134,7 @@ To enhance the **transparency** and **reproducibility** of our experimental resu
 * **Models evaluated:** MG-STNET, GSNet, TWCCnet, and MGHSTN (publicly available implementations)
 * **Evaluation metrics:** RMSE, Recall, and MAP
 * **Number of runs:** 5 independent runs per model
-* **Random seeds:** {42, 2023, 1024, 3407, 7777}
+* **Random seeds:** {100, 500, 1000, 1500, 2019}
 * **Environment consistency:** All experiments were conducted using identical data splits, hyperparameter settings, and evaluation protocols to ensure fair comparison.
 * **Seed initialization:** Followed the same random seed configuration as GSNet
   ([https://github.com/Echohhhhhh/GSNet/tree/master/config](https://github.com/Echohhhhhh/GSNet/tree/master/config))
@@ -161,20 +153,7 @@ Confidence intervals were estimated using **bootstrap resampling** over the five
 
 ### 📁 Files
 
-All results are located in the `/results/confidence_intervals/` directory:
-
-```
-results/
- ├── confidence_intervals/
- │    ├── NYC_MG-STNET_CI.csv
- │    ├── NYC_GSNet_CI.csv
- │    ├── NYC_TWCCnet_CI.csv
- │    ├── NYC_MGHSTN_CI.csv
- │    ├── Chicago_MG-STNET_CI.csv
- │    ├── Chicago_GSNet_CI.csv
- │    ├── Chicago_TWCCnet_CI.csv
- │    └── Chicago_MGHSTN_CI.csv
-```
+All results are located in the [`CIs`](https://github.com/zouguojian/Traffic-accident-prediction/blob/main/MG-STNET/Reporting%20confidence%20intervals%20for%20RMSE%2C%20Recall%2C%20and%20MAP.docx).
 
 Each file contains the following columns:
 

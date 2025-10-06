@@ -9,11 +9,11 @@ Unzip data.zip
 ## NYC dataset
 
 ```
-python3 train.py --config config/nyc/TWCCNet_NYC_Config.json --gpus 0
+python train.py --config config/nyc/TWCCNet_NYC_Config.json --gpus 0
 ```
 
 ## Chicago dataset
 
 ```
-python3 train.py --config config/chicago/TWCCNet_Chicago_Config.json --gpus 0
+python train.py --config config/chicago/TWCCNet_Chicago_Config.json --gpus 0
 ```

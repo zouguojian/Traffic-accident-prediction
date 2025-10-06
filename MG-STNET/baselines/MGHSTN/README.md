@@ -28,15 +28,24 @@ unzip nyc_remote_sensing_256.zip
 
 train model on NYC:
 ```
-python train.py --config config/nyc/NYC_Config.json --gpus 0
+python train.py --config config/nyc/NYC_Config.json --gpus 0 --nors
+```
+
+test
+```
+python train.py --config config/nyc/NYC_Config.json --gpus 0 --nors --infer
 ```
 
 
 train model on Chicago:
 ```
-python train.py --config config/chicago/Chicago_Config.json --gpus 0
+python train.py --config config/chicago/Chicago_Config.json --gpus 0 --nors
 ```
 
+test
+```
+python train.py --config config/chicago/Chicago_Config.json --gpus 0 --nors --infer
+```
 
 ## Citation
 

@@ -1,5 +1,3 @@
-<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/844d543b-a522-4b03-b6b4-acbe6edd1f54" /># Traffic- accident-risk-estimation
-
 # MG-STNET
 MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
 

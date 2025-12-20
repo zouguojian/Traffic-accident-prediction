@@ -3,7 +3,7 @@ This work considers combining multiple tricks with highway networks to accuratel
 
 ## MODEL ITEM
 ### 1. (2025). MG-STNET: A Multi-Graph Spatio-Temporal Network for Traffic Accident Risk Forecasting [[codes link]](https://github.com/zouguojian/Traffic-accident-prediction/tree/main/MG-STNET)  
-* Note that the MG-STNET program should be reproduced on the PyTorch version >= 2.10.0. 
+* Note that the MG-STNET program should be reproduced on the PyTorch version >= 2.1.0. 
 If not, there are some problems will appear in the running stage.
 ---
 

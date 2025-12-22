@@ -1,5 +1,6 @@
 # MG-STNET
-MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting
+MG-STNET: A Multi-Graph Spatial-Temporal Network for Traffic Accident Risk Forecasting  
+Google Drive: https://drive.google.com/file/d/18VMldZhBCYnM8G_Xae0PkABCJL49pf3a/view?usp=share_link
 
 # Usage
 
